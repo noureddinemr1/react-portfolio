@@ -6,6 +6,7 @@ import {
   AiOutlineInstagram,
   AiOutlineLinkedin,
 } from "react-icons/ai";
+import { SiNextdotjs } from "react-icons/si";
 import {
   DiPython,
   DiPostgresql,
@@ -163,6 +164,7 @@ const Hero = () => {
           className="flex flex-row items-center justify-center w-full px-8 pt-2 pb-8 md:px-8 md:py-24"
         >
           <DiReact className="text-6xl transition-transform duration-300 text-cyan-500 hover:-translate-y-1" />
+          <SiNextdotjs className="mx-2 text-5xl text-gray-800 transition-transform duration-300 hover:-translate-y-1" />
           <DiNodejsSmall className="mx-2 text-6xl text-green-700 transition-transform duration-300 hover:-translate-y-1" />
           <DiMongodb className="mx-2 text-6xl transition-transform duration-300 text-lime-600 hover:-translate-y-1" />
           <DiPostgresql className="mx-2 text-6xl transition-transform duration-300 text-sky-700 hover:-translate-y-1" />

@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
-import { Toaster } from 'react-hot-toast'; // Import Toaster
+import { Toaster } from 'react-hot-toast'; 
 
 export default function App() {
   return (
