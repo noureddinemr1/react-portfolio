@@ -12,9 +12,6 @@ import {
   DiPostgresql,
   DiMongodb,
   DiNodejsSmall,
-  DiSpark,
-  DiAws,
-  DiDocker,
   
 } from "react-icons/di";
 import { motion } from "framer-motion";
@@ -42,8 +39,6 @@ const Hero = () => {
             <TypeAnimation
               sequence={[
                 "FullStack Developer",
-                1500,
-                "Web, ETL, Automation",
                 1500,
               ]}
               speed={30}
@@ -171,9 +166,6 @@ const Hero = () => {
           <DiPostgresql className="mx-2 text-6xl transition-transform duration-300 text-sky-700 hover:-translate-y-1" />
           <DiMongodb className="mx-2 text-6xl transition-transform duration-300 text-lime-600 hover:-translate-y-1" />
           <DiPython className="mx-2 text-6xl transition-transform duration-300 text-sky-700 hover:-translate-y-1" />
-          <DiSpark className="mx-2 text-orange-500 transition-transform duration-300 text-7xl hover:-translate-y-1" />
-          <DiAws className="mx-2 transition-transform duration-300 text-black-700 text-7xl hover:-translate-y-1" />
-          <DiDocker className="mx-2 text-blue-500 transition-transform duration-300 text-8xl hover:-translate-y-1" />
 
         </motion.div>
 
