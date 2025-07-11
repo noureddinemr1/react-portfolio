@@ -9,7 +9,7 @@ import Reveal from './Reveal';
 const projects = [
     {
       img: project3,
-      title: "Competitracker",
+      title: "CompetiTracker",
       description: "A web tool designed to track competitors’ strategies—pricing, promotions, and product changes in Tunisia’s e-commerce market.",
       links: {
         site: "#",
