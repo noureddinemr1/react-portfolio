@@ -8,6 +8,15 @@ import Reveal from './Reveal';
 
 const projects = [
     {
+      img: project3,
+      title: "Competitracker",
+      description: "A web tool designed to track competitors’ strategies—pricing, promotions, and product changes in Tunisia’s e-commerce market.",
+      links: {
+        site: "#",
+        github: "https://github.com/noureddinemr1/competitracker",
+      },
+    },
+    {
       img: project1,
       title: "Dream House",
       description: "Full Stack real estate web application using NextJs expressJs and MongoDB.",
