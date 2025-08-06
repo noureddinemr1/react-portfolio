@@ -40,6 +40,8 @@ const Hero = () => {
               sequence={[
                 "FullStack Developer",
                 1500,
+                "Automation Specialist",1500,
+                "Data Integration",1500
               ]}
               speed={30}
               repeat={Infinity}

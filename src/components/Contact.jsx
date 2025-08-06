@@ -54,18 +54,18 @@ const Contact = () => {
   
   return (
     <div className="px-0 max-w-[1000px]  mx-auto " id="contact">
-      <h2 className='text-3xl font-bold text-center    underline text-cyan-500'>Contact</h2>
+      <h2 className='text-3xl font-bold text-center underline text-cyan-500'>Contact</h2>
         <Reveal>
         <div className="grid  sm:grid-cols-2 items-start gap-16 p-4 mx-auto max-w-4xl bg-transparent font-[sans-serif] md:mt-7 md:ml-14">
             <div>
-                <h1 className="text-gray-700 text-3xl font-bold">Let's Talk</h1>
-                <p className="text-sm text-gray-500 mt-4">Have some big idea or brand to develop and need help? Then reach out I'd love to hear about your project  and provide help.</p>
+                <h1 className="text-3xl font-bold text-gray-700">Let's Talk</h1>
+                <p className="mt-4 text-sm text-gray-500">Have some big idea or brand to develop and need help? Then reach out I'd love to hear about your project  and provide help.</p>
 
                 <div className="mt-12">
-                    <h2 className="text-gray-700 text-base font-medium" >Email</h2>
+                    <h2 className="text-base font-medium text-gray-700" >Email</h2>
                     <ul className="mt-4">
                         <li className="flex items-center">
-                            <div className="border border-cyan-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                            <div className="flex items-center justify-center w-10 h-10 border rounded-full border-cyan-500 shrink-0">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#00BCD4'
                                     viewBox="0 0 479.058 479.058">
                                     <path
@@ -73,19 +73,19 @@ const Contact = () => {
                                         data-original="#000000" />
                                 </svg>
                             </div>
-                            <a href="javascript:void(0)" className="text-cyan-500 text-sm ml-4">
+                            <a href="javascript:void(0)" className="ml-4 text-sm text-cyan-500">
                                 <small className="block">Mail</small>
-                                <strong>marzouguinoureddine@isimm.u-monastir.tn</strong>
+                                <strong>noureddine.marzougui19@gmail.com</strong>
                             </a>
                         </li>
                     </ul>
                 </div>
 
                 <div className="mt-12">
-                    <h2 className="text-gray-800 text-base font-medium">Socials</h2>
+                    <h2 className="text-base font-medium text-gray-800">Socials</h2>
 
                     <ul className="flex mt-4 space-x-4">
-                        <li className="hover:scale-110 transition duration-200 border border-cyan-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                        <li className="flex items-center justify-center w-10 h-10 transition duration-200 border rounded-full hover:scale-110 border-cyan-500 shrink-0">
                             <a href="https://www.facebook.com/profile.php?id=61556283720344" target="_blank" 
                         rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#00BCD4'
@@ -96,7 +96,7 @@ const Contact = () => {
                                 </svg>
                             </a>
                         </li>
-                        <li className="border border-cyan-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0 hover:scale-110 transition duration-200">
+                        <li className="flex items-center justify-center w-10 h-10 transition duration-200 border rounded-full border-cyan-500 shrink-0 hover:scale-110">
                             <a href="https://www.linkedin.com/in/noureddinemr1/" target="_blank" 
                         rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#00BCD4'
@@ -107,7 +107,7 @@ const Contact = () => {
                                 </svg>
                             </a>
                         </li>
-                        <li className="hover:scale-110 transition duration-200 border border-cyan-500 h-10 w-10 rounded-full flex items-center justify-center shrink-0">
+                        <li className="flex items-center justify-center w-10 h-10 transition duration-200 border rounded-full hover:scale-110 border-cyan-500 shrink-0">
                             <a href="https://www.instagram.com/noureddinemr/" target="_blank" 
                         rel="noopener noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" fill='#00BCD4'
@@ -129,7 +129,7 @@ const Contact = () => {
                         : "border-none"
                     }`}/>
                     {errors.name && (
-                <p className="text-red-400 text-xs font-bold ml-3 ">{errors.name}</p>
+                <p className="ml-3 text-xs font-bold text-red-400 ">{errors.name}</p>
               )}
                 <input type='text' placeholder='Email' name="user_email"
                     className={`w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-cyan-500 focus:bg-transparent tansition duration-300 ${
@@ -137,17 +137,17 @@ const Contact = () => {
                         : "border-none"
                     }`}/>
                     {errors.email && (
-                <p className="text-red-400 text-xs font-bold ml-3 ">{errors.email}</p>
+                <p className="ml-3 text-xs font-bold text-red-400 ">{errors.email}</p>
               )} 
                 <input type='text' placeholder='Subject'  name="object"
-                    className="w-full rounded-md py-3 px-4 bg-gray-100 text-gray-800 text-sm outline-cyan-500 focus:bg-transparent tansition duration-300" />
+                    className="w-full px-4 py-3 text-sm text-gray-800 duration-300 bg-gray-100 rounded-md outline-cyan-500 focus:bg-transparent tansition" />
                 <textarea placeholder='Message' rows="6" name="message"
                     className={`w-full rounded-md px-4 bg-gray-100 text-gray-800 text-sm pt-3 outline-cyan-500 focus:bg-transparent tansition duration-300 ${
                       errors.message? "border-red-400 focus:outline-red-400"
                         : "border-none"
                     }`}/>
                     {errors.message && (
-                <p className="text-red-400 text-xs font-bold ml-3 ">{errors.message}</p>
+                <p className="ml-3 text-xs font-bold text-red-400 ">{errors.message}</p>
               )}
                 <button type='submit'
                     className="text-white bg-cyan-500 hover:bg-cyan-600 tansition duration-200tracking-wide rounded-md text-sm px-4 py-3 w-full !mt-6 tansition duration-300">Send</button>
